@@ -15,11 +15,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "1.7.x",
-    "chai": "1.4.x",
-    "sinon": "1.5.x",
-    "sinon-mocha": "0.0.3",
-    "sinon-chai": "2.3.0"
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0",
+    "sinon": "^1.12.2",
+    "sinon-chai": "^2.6.0"
   },
   "licenses": [
     {

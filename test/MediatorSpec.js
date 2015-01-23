@@ -1,14 +1,22 @@
 var Mediator = require("../index").Mediator,
-    sinon = require('sinon'),
+    sinon_ = require('sinon'),
     chai = require('chai'),
     expect = require('chai').expect,
     sinonChai = require("sinon-chai");
 
 chai.use(sinonChai);
-require('sinon-mocha').enhance(sinon);
+
 
 describe("Mediator", function() {
   var mediator;
+  var sinon;
+  beforeEach(function(){
+    sinon = sinon_.sandbox.create();
+  });
+
+  afterEach(function(){
+    sinon.restore();
+  });
 
   beforeEach(function() {
     mediator = new Mediator();
