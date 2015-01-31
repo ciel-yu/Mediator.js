@@ -359,7 +359,7 @@ describe("Mediator", function() {
       var spy = sinon.spy(),
           spy2 = sinon.spy();
 
-      mediator.subscribe("test:test1:test2", spy);
+      //mediator.subscribe("test:test1:test2", spy);
       mediator.subscribe("test", spy2);
 
       mediator.publish("test:test1", "data");
